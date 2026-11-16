@@ -1,8 +1,10 @@
 # Minimal Coding Agent
 
 A minimal command-line coding agent built with Go and OpenRouter. It uses
-`nvidia/nemotron-3-ultra-550b-a55b:free` and currently has one tool call:
-`read_file`, which lets the model read a file in the working directory.
+`nvidia/nemotron-3-ultra-550b-a55b:free` and currently has three tool calls:
+- **read_file** - Read the contents of a given relative file path
+- **list_files** - List files and directories at a given path (defaults to current directory)
+- **edit_file** - Make edits to a text file by replacing `old_str` with `new_str` (creates file if it doesn't exist)
 
 ## Requirements
 
